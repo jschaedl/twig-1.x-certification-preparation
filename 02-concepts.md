@@ -1,4 +1,4 @@
-# Twig certification preparation - Concepts
+# Twig 1.x Certification Preparation - Concepts
 
 Twig is **fast** (compiles templates down to plain optimized PHP code), **secure** (comes with a sandbox mode, user can safely modify the template design) and **flexible** (flexible lexer and parser, define custom tags and filters).
 
