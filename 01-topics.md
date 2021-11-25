@@ -1,4 +1,4 @@
-# Topics
+# Twig 1.x Certification Preparation - Topics
 
 ![Topics](https://github.com/jschaedl/twig-1.x-certification-preparation/blob/main/topics.png)
 
