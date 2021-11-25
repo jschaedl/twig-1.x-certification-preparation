@@ -1,6 +1,6 @@
 # Twig 1.x Certification Preparation - Important Tags
 
-## `apply`-tag
+## `apply`
 
 To apply a filter on a section of code, use the `apply` tag:
 
@@ -10,7 +10,7 @@ To apply a filter on a section of code, use the `apply` tag:
 {% endapply %}
 ```
 
-## `autoescape`-tag
+## `autoescape`
 
 Whether automic escaping is enabled or not you can escape a section of a template by using the `autoescape` tag.
 
@@ -44,7 +44,7 @@ __Note:__ Twig does not escape static expressions.
 
 __Warning:__ The autoescape tag has no effect on included files.
 
-## `block`-tag
+## `block`
 
 Used for inheritance and act as placeholders and replacements at the same time. Block names must consist of:
 
@@ -84,7 +84,7 @@ Block shortcut:
 {% block title page_title|title %}
 ```
 
-## `embed`-tag
+## `embed`
 
 The `embed` tag combines the behavior of `include` and `extends`. Think of an embedded template as a "micro layout skeleton":
 
@@ -119,7 +119,7 @@ The `embed` tag takes the exact same arguments as the `include` tag:
 
 __Warning:__ As embedded templates do not have "names", auto-escaping strategies based on the template name won't work as expected if you change the context (for instance, if you embed a CSS/JavaScript template into an HTML one). In that case, explicitly set the default auto-escaping strategy with the autoescape tag.
 
-## `extends`-tag
+## `extends`
 
 Used to extend a template from another one. Multiple inheritance is not supported. Should be the first tag in the template.
 
@@ -137,7 +137,7 @@ Conditional inheritance:
 {% extends standalone ? "minimum.html" : "base.html" %}
 ```
 
-## `for`-tag
+## `for`
 
 Used to loop over a sequence. A sequence can be either an array or an object implementing the Travversable interface:
 
@@ -191,7 +191,7 @@ If no iteration took place (empty sequence) you can render a replacement:
 {% for user in users|slice(0, 10) %} ... {% endfor %}
 ```
 
-## `if`-tag
+## `if`
 
 Used to test if an expression evaluates to `true`.
 
@@ -220,7 +220,7 @@ Used to test if an expression evaluates to `true`.
 {% endif %}
 ```
 
-## `set`-tag
+## `set`
 
 The `set` tag is used to assign variables inside code blocks:
 
@@ -244,7 +244,7 @@ The `set` tag can also capture chunks of text:
 
 __Note:__ loops are scoped in Twig. Therefore a variable declared inside a `for` loop is not accessible outside a loop itself. If you want access, just declare it before the loop.
 
-## `use`-tag
+## `use`
 
 The `use` statement tells Twig to import the block in the defined template:
 
@@ -281,7 +281,7 @@ The main template can also override any imported block. If the template already 
 
 __Note:__ You can use as many use statements as you want in any given template. If two imported templates define the same block, the latest one wins.
 
-## `verbatim`-tag
+## `verbatim`
 
 Marks a section of a template as being raw text that should not be parsed.
 
